@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="hosName">WellCare Hospital</h1>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="booking.html">Book Appointment</a></li>
+                <li><a href="doctors.html">Doctors Profile</a></li>
+                <li><a href="services.html">Medical Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="appointment">
+      <div class="container">
+        <h2>Book an Appointment</h2>
+        <form action="#" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required> <br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required> <br><br>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required> <br><br>
+          <label for="department">Department:</label>
+          <select id="department" name="department" required> <br><br>
+            <option value="">Select Department</option>
+            <option value="primary_care">Primary Care</option>
+            <option value="specialty_clinics">Specialty Clinics</option>
+            <option value="emergency_care">Emergency Care</option>
+          </select>  <br><br>
+          <label for="doctor">Doctor:</label>
+          <input type="text" id="doctor" name="doctor" required> <br><br>
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required> <br><br>
+          <label for="time">Preferred Time Slot:</label>
+          <select id="time" name="time" required>
+              <option value="">Select Time Slot</option>
+              <option value="9:00 AM">9:00 AM</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="3:00 PM">3:00 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+            </select> <br><br>
+          <label for="message">Additional Message (optional):</label> <br>
+          <textarea id="message" name="message" rows="4"></textarea>  <br><br>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
